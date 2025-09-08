@@ -16,7 +16,7 @@
     <description>Demo project for Spring Boot</description>
     <properties>
 <!--        <java.version>1.8</java.version>-->
-        <java.version>21</java.version>
+        <java.version>21</java.version>         <!-- 1.8 -->
     </properties>
     <dependencies>
         <dependency>
@@ -42,6 +42,7 @@
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
+<!--            我这里用的mysql-connector-java，版本是都没有添加的-->
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -73,6 +74,7 @@
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
             <version>3.0.3</version>
+<!--            有些人用的是3.5.9-->
         </dependency>
 <!--        <dependency>-->
 <!--            <groupId>com.baomidou</groupId>-->
@@ -104,6 +106,11 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
+        </dependency>
+        <dependency>
+                <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>2.1.1</version>
         </dependency>
     </dependencies>
 
