@@ -27,8 +27,9 @@ public class ShopTypeController {
 
     @GetMapping("list")
     public Result queryTypeList() {
-        List<ShopType> typeList = typeService
-                .query().orderByAsc("sort").list();
-        return Result.ok(typeList);
+        return typeService.queryList();  //mybaits_plus的一个数据库接口
+//        List<ShopType> typeList = typeService
+//                .query().orderByAsc("sort").list();
+//        return Result.ok(typeList);
     }
 }
